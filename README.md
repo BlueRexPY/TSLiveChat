@@ -1,6 +1,6 @@
 # TSLiveChat
 
-# Description 
+### Description 
 Live chat - created with TypeScript, MUI, Firebase
 
 App with global chat and google authentication
