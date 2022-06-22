@@ -1,5 +1,5 @@
 import { Button, Grid, Container, Typography, TextField, Avatar } from '@mui/material';
-import React from 'react'
+import React, { useCallback } from 'react'
 import Message from './Message';
 import { useState, useEffect } from 'react';
 import { collection,addDoc,serverTimestamp,  query, orderBy, getDocs, QueryDocumentSnapshot, QuerySnapshot,DocumentData  } from "firebase/firestore";
@@ -12,10 +12,7 @@ const Chat = (props: Props) => {
 
   const [value, setValue] = useState('')
   const [user, loadingUser, error] = useAuthState(auth);
-  
-
   const [messages, setMessages] = useState<DocumentData[]>([])
-
 
   const sendMessage = (text:string) =>{
     if(text!=''){
@@ -24,6 +21,7 @@ const Chat = (props: Props) => {
         email: user?.email,
         photoLink: user?.photoURL,
         text:text,
+        name: user?.displayName,
       }
       addDoc(collection(db, "messages"), newMessage);
       setValue('')
@@ -32,8 +30,6 @@ const Chat = (props: Props) => {
     }
   }
   
-
-
   async function update() {
     const q = query(collection(db, 'messages'), orderBy("createdAt"));
     const querySnapshot: QuerySnapshot = await getDocs(q)
@@ -46,6 +42,7 @@ const Chat = (props: Props) => {
     update()
   }, [messages])
 
+
   return (
     <Container>
       <Grid container direction="column" justifyContent="center" alignItems="center" width={"100%"} height={"90vh"}>
@@ -55,7 +52,7 @@ const Chat = (props: Props) => {
         {
           messages?.map((item,key) =>{
             return(
-              <Message key={key} email={item?.email} photoLink={item?.photoLink} text={item?.text}/>
+              <Message key={key} email={item?.email} photoLink={item?.photoLink} text={item?.text} name={item?.name}/>
             )
           })
         }
@@ -66,7 +63,6 @@ const Chat = (props: Props) => {
           <TextField color='secondary' id="textForMessage" label="Type your message" variant="outlined" autoComplete='false' value={value} onChange={(e)=> setValue(e.target.value)}></TextField>
           <Button variant="outlined" color="secondary" size="large" onClick={()=>{sendMessage(value)}}>Send</Button>
         </Grid>
-        
       </Grid>
     </Container>
   )

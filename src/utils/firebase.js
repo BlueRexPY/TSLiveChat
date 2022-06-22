@@ -17,12 +17,12 @@ import {
   addDoc,
 } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "xxxxxxxxxxxxx",
-  authDomain: "xxxxxxxxxxxxx",
-  projectId: "xxxxxxxxxxxxx",
-  storageBucket: "xxxxxxxxxxxxx",
-  messagingSenderId: "xxxxxxxxxxxxx",
-  appId: "xxxxxxxxxxxxx"
+  apiKey: "XXXXXX",
+  authDomain: "XXXXXX",
+  projectId: "XXXXXX",
+  storageBucket: "XXXXXX",
+  messagingSenderId: "XXXXXX",
+  appId: "XXXXXX"
 };
 
 
