@@ -7,7 +7,7 @@ Live chat - created with:<br>
     <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white"/>
     <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>
     <img src="https://img.shields.io/badge/mobx-%23593d88.svg?style=for-the-badge&logo=mobx&logoColor=white">
-    <br>
+<br>
 App with global chat and google authentication
 
 link on video 
