@@ -8,16 +8,16 @@ Live chat - created with:<br>
     <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>
     <img src="https://img.shields.io/badge/mobx-%23593d88.svg?style=for-the-badge&logo=mobx&logoColor=white">
 <br>
-** App with global chat and google authentication **
+**App with global chat and google authentication**
 
-** link on video **
+**link on video**
 
 
 <a target="_blank" href="https://youtu.be/ABJrr9FWq-I">
     <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"/>
 </a>
 
-** Start **
+**Start**
 
 Enter your config from firebase in "src/utils/firebase.js" "firebaseConfig"
 ### `npm install`
