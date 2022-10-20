@@ -1,4 +1,4 @@
-![Banner](https://cdn.discordapp.com/attachments/736633764930912257/989997369313624084/TSLiveChat.png)
+![Banner](https://cdn.discordapp.com/attachments/736633764930912257/1032781571473813544/TSLiveChat.png)
 
 # TSLiveChat
 
