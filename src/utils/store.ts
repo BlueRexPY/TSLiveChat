@@ -1,20 +1,20 @@
 import { makeAutoObservable } from "mobx";
 
-class LastUser{
+class LastUser {
     userInfo = {
         email: '',
         photoLink: '',
-        name:''
+        name: ''
     }
-    constructor(){
+    constructor() {
         makeAutoObservable(this)
     }
 
-    setUserInfo(email:string,photoLink:string,name:string){
+    setUserInfo(email: string, photoLink: string, name: string) {
         this.userInfo = {
             email: email,
             photoLink: photoLink,
-            name:name
+            name: name
         }
     }
 }
