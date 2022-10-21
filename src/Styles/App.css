@@ -2,18 +2,20 @@
   text-align: center;
 }
 
-*{
+* {
   transition: .2s;
 }
-body{
+
+body {
   background-color: #211E2D;
 }
-.link{
+
+.link {
   text-decoration: none;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width     : 5px;
   transition: 0.3s;
 }
 
@@ -23,9 +25,9 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #382f5a;
+  background   : #382f5a;
   border-radius: 8px;
-  border: 1px solid #211E2D;
+  border       : 1px solid #211E2D;
 }
 
 ::-webkit-scrollbar-thumb:hover {
