@@ -3,14 +3,14 @@ import Chat from "./Chat";
 import Login from "./Login";
 import UserInfo from "./UserInfo";
 
-export const publicRouts = [
+export const publicRoutes = [
     {
         path: LOGIN_ROUTE,
         Component: Login,
     }
 ]
 
-export const privatRouts = [
+export const privateRoutes = [
     {
         path: CHAT_ROUTE,
         Component: Chat,
