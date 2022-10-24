@@ -1,3 +1,5 @@
+![Banner](https://cdn.discordapp.com/attachments/736633764930912257/989997369313624084/TSLiveChat.png)
+
 # TSLiveChat
 
 ### Description 
@@ -12,3 +14,14 @@ Live chat - created with:<br>
 
 
 **link on video**
+
+
+<a target="_blank" href="https://youtu.be/ABJrr9FWq-I">
+    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"/>
+</a>
+
+**Start**
+
+Enter your config from firebase in "src/utils/firebase.js" "firebaseConfig"
+### `npm install`
+### `npm start`
